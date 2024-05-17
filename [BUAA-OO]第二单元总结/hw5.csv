@@ -1,0 +1,49 @@
+Complexity metrics,÷‹»’, 14 4‘¬ 2024 13:53:27 CST,,
+Method,CogC,ev(G),iv(G),v(G)
+"Elevator.Elevator(int, RequestTable)",1,1,2,2
+Elevator.open(),13,4,10,10
+Elevator.run(),16,3,6,9
+InputHandler.InputHandler(RequestTable),0,1,1,1
+InputHandler.run(),5,3,3,4
+Main.main(String[]),3,1,4,4
+"Person.Person(int, int, int, int)",0,1,1,1
+Person.getElevatorId(),0,1,1,1
+Person.getFromFloor(),0,1,1,1
+Person.getId(),0,1,1,1
+Person.getToFloor(),0,1,1,1
+RequestTable.RequestTable(),1,1,2,2
+RequestTable.addRequest(Person),0,1,1,1
+"RequestTable.delRequest(int, int)",0,1,1,1
+RequestTable.getOneRequest(),8,3,7,7
+RequestTable.getRequestMap(),0,1,1,1
+RequestTable.isEmpty(),0,1,1,1
+RequestTable.isEnd(),0,1,1,1
+RequestTable.setEndFlag(),0,1,1,1
+RequestTable.waitRequest(),0,1,1,1
+Schedule.Choose(Person),0,1,1,1
+"Schedule.Schedule(RequestTable, HashMap<Integer, RequestTable>)",0,1,1,1
+Schedule.run(),9,4,5,6
+Strategy.Strategy(RequestTable),0,1,1,1
+"Strategy.canOpenForIn(int, int, int)",11,4,7,8
+"Strategy.canOpenForOut(int, HashMap<Integer, ArrayList<Person>>)",2,2,1,2
+"Strategy.getAdvice(int, int, int, HashMap<Integer, ArrayList<Person>>)",15,6,4,7
+"Strategy.requestForOriginDir(int, int)",7,3,3,7
+,,,,
+Class,OCavg,OCmax,WMC,
+Advice,n/a,n/a,0,
+Elevator,5.33,8,16,
+InputHandler,2,3,4,
+Main,4,4,4,
+Person,1,1,5,
+RequestTable,1.56,5,14,
+Schedule,2.33,5,7,
+Strategy,3.2,6,16,
+,,,,
+Package,v(G)avg,v(G)tot,,
+,3,84,,
+,,,,
+Module,v(G)avg,v(G)tot,,
+hw5,3,84,,
+,,,,
+Project,v(G)avg,v(G)tot,,
+project,3,84,,

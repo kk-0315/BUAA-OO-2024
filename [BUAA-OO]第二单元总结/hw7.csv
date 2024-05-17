@@ -1,0 +1,109 @@
+Complexity metrics,÷‹»’, 14 4‘¬ 2024 17:06:54 CST,,
+Method,CogC,ev(G),iv(G),v(G)
+"DcReset.DcReset(int, int, double, int)",0,1,1,1
+DcReset.getCapacity(),0,1,1,1
+DcReset.getElevatorId(),0,1,1,1
+DcReset.getSpeed(),0,1,1,1
+DcReset.getTransferFloor(),0,1,1,1
+"Elevator.Elevator(int, RequestTable, RequestTable, Boolean)",1,1,2,2
+"Elevator.Elevator(int, RequestTable, RequestTable, int, int, int, int, ...)",1,1,2,2
+Elevator.addNowNum(int),0,1,1,1
+Elevator.getAtFlag(),0,1,1,1
+Elevator.getMaxFloor(),0,1,1,1
+Elevator.getMinFloor(),0,1,1,1
+Elevator.getNowNum(),0,1,1,1
+Elevator.getOut(),11,1,7,7
+Elevator.isEmpty(),0,1,1,1
+Elevator.move(),5,1,3,4
+Elevator.open(),0,1,1,1
+Elevator.openForIn(),19,4,12,12
+Elevator.outAndIn(),20,1,10,12
+Elevator.reset(),11,5,6,6
+Elevator.run(),20,3,9,16
+Elevator.setAtFlag(Boolean),0,1,1,1
+Elevator.setSecId(int),0,1,1,1
+Elevator.subNowNum(int),0,1,1,1
+"InputHandler.InputHandler(RequestTable, HashMap<Integer, RequestTable>, HashMap<Integer, Elevator>, HashMap<Integer, Boolean>)",0,1,1,1
+InputHandler.run(),10,3,6,7
+Main.main(String[]),4,1,5,5
+"NormalReset.NormalReset(int, int, double)",0,1,1,1
+NormalReset.getCapacity(),0,1,1,1
+NormalReset.getElevatorId(),0,1,1,1
+NormalReset.getSpeed(),0,1,1,1
+"Person.Person(int, int, int)",0,1,1,1
+Person.getElevatorId(),0,1,1,1
+Person.getFromFloor(),0,1,1,1
+Person.getId(),0,1,1,1
+Person.getToFloor(),0,1,1,1
+Person.setElevatorId(int),0,1,1,1
+RequestTable.RequestTable(),1,1,2,2
+RequestTable.addCrossNum(),0,1,1,1
+RequestTable.addRequest(Person),0,1,1,1
+RequestTable.addRequestTable(RequestTable),3,1,3,3
+RequestTable.addReset(Reset),0,1,1,1
+RequestTable.addResetNum(),0,1,1,1
+RequestTable.clear(int),1,1,2,2
+"RequestTable.delRequest(int, int)",0,1,1,1
+RequestTable.getOneRequest(),8,3,7,7
+RequestTable.getRequestMap(),0,1,1,1
+RequestTable.getRequestNum(),0,1,1,1
+RequestTable.getReset(int),0,1,1,1
+RequestTable.isCrossNumEmpty(),0,1,1,1
+RequestTable.isDC(),0,1,1,1
+RequestTable.isEmpty(),0,1,1,1
+RequestTable.isEnd(),0,1,1,1
+RequestTable.isResetEmpty(),0,1,1,1
+RequestTable.isReseting(),0,1,1,1
+RequestTable.setDcFlag(Boolean),0,1,1,1
+RequestTable.setEndFlag(),0,1,1,1
+RequestTable.setResetFlag(Boolean),0,1,1,1
+RequestTable.subCrossNum(),0,1,1,1
+RequestTable.subResetNum(),0,1,1,1
+RequestTable.waitRequest(),0,1,1,1
+Schedule.Choose(Person),23,2,8,8
+"Schedule.Schedule(RequestTable, HashMap<Integer, RequestTable>, HashMap<Integer, Elevator>)",1,1,2,2
+"Schedule.create(int, int, int, double, Boolean)",0,1,1,1
+Schedule.getNum(),5,1,2,4
+Schedule.isWaitEmpty(),3,3,2,3
+Schedule.run(),27,7,16,18
+Schedule.schWait(),38,1,11,11
+Strategy.Strategy(RequestTable),0,1,1,1
+"Strategy.canOpenForIn(int, int, int, int)",11,4,7,8
+"Strategy.canOpenForOut(int, HashMap<Integer, ArrayList<Person>>)",2,2,1,2
+Strategy.canReset(int),1,2,1,2
+"Strategy.getAdvice(int, int, int, int, HashMap<Integer, ArrayList<Person>>, int)",22,7,5,8
+"Strategy.requestForOriginDir(int, int)",7,3,3,7
+"TestMain.Pair.Pair(K, V)",0,1,1,1
+TestMain.Pair.equals(Object),4,3,3,5
+TestMain.Pair.getFirst(),0,1,1,1
+TestMain.Pair.getSecond(),0,1,1,1
+TestMain.Pair.hashCode(),0,1,1,1
+TestMain.Pair.toString(),0,1,1,1
+TestMain.TimeInputStream.TimeInputStream(ArrayList<String>),4,3,3,3
+TestMain.TimeInputStream.read(),7,3,3,5
+"TestMain.TimeInputStream.read(byte[], int, int)",10,8,2,10
+TestMain.main(String[]),1,1,2,2
+,,,,
+Class,OCavg,OCmax,WMC,
+Advice,n/a,n/a,0,
+DcReset,1,1,5,
+Elevator,3.39,12,61,
+InputHandler,3.5,6,7,
+Main,5,5,5,
+NormalReset,1,1,4,
+Person,1,1,6,
+RequestTable,1.33,5,32,
+Schedule,5.29,10,37,
+Strategy,3.17,7,19,
+TestMain,2,2,2,
+TestMain.Pair,1.33,3,8,
+TestMain.TimeInputStream,5,8,15,
+,,,,
+Package,v(G)avg,v(G)tot,,
+,2.87,238,,
+,,,,
+Module,v(G)avg,v(G)tot,,
+hw7,2.87,238,,
+,,,,
+Project,v(G)avg,v(G)tot,,
+project,2.87,238,,
